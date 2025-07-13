@@ -88,6 +88,11 @@ body {
     display: none;
   }
 }
+@media (max-width: 800px) {
+  .coffeemason-img {
+    display: none;
+  }
+}
 
 /* === Services === */
 .mason-services {
