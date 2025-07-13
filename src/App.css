@@ -90,8 +90,7 @@ body {
 }
 @media (max-width: 1040px) {
   .coffeemason-img {
-    @apply absolute bottom
-    -[130px] right-[60px] w-[260px] hidden md:block;
+    @apply absolute bottom-[100px] right-[60px] w-[260px] hidden md:block;
   }
 }
 
@@ -213,14 +212,14 @@ body {
     @apply text-[30px] mb-[30px];
   }
   .open-hours {
-    @apply text-[25px] mb-[20px];
+    @apply text-[17px] mb-[20px];
   }
   .hours p,
   .location {
-    @apply text-[25px] my-[5px];
+    @apply text-[17px] my-[5px];
   }
   .direction-btn {
-    @apply px-[12px] py-[12px] text-[15px] mt-[20px] mb-[20px];
+    @apply px-[10px] py-[12px] text-[15px] mt-[20px] mb-[20px];
   }
   .promo-circle {
     @apply w-[150px] h-[150px]  mb-[30px] mr-[10px] text-[15px];
