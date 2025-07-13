@@ -88,9 +88,10 @@ body {
     display: none;
   }
 }
-@media (max-width: 1030px) {
+@media (max-width: 1040px) {
   .coffeemason-img {
-    display: none;
+    @apply absolute bottom
+    -[130px] right-[60px] w-[260px] hidden md:block;
   }
 }
 
