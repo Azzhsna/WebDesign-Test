@@ -1,0 +1,305 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Utility Classes from previous CSS */
+
+/* ===  Body  === */
+body {
+  @apply font-sans m-0 p-0 bg-[#e9dec9];
+}
+html,
+body {
+  @apply m-0 p-0 overflow-x-hidden;
+}
+
+/* ===  Navbar  === */
+.navbar {
+  @apply fixed top-0 left-0 w-full z-50 flex justify-between items-center bg-[#252324] text-[#e0cdbf] px-8 py-5 font-bold cursor-pointer transition-transform duration-500;
+}
+.navbar--hidden {
+  @apply -translate-y-full;
+}
+.navbar--visible {
+  @apply translate-y-0;
+}
+.navbar-left {
+  @apply flex items-center gap-[120px] ml-[70px] mr-[20px];
+}
+
+.navbar-right {
+  @apply flex items-center gap-[120px] ml-[20px] mr-[70px];
+}
+
+.navbar p {
+  @apply m-0 transition-colors duration-300 cursor-pointer font-fredoka;
+}
+.navbar p:hover {
+  @apply text-[#c86f35] underline;
+}
+.navbar .icon {
+  @apply text-[20px] transition-colors duration-300 cursor-pointer;
+}
+
+/* === Cafe Name === */
+.cafe-name {
+  @apply text-center bg-[#252324] text-[#e0cdbf] py-[120px] pb-[150px] rounded-b-[30%] text-[35px] font-belleza;
+}
+.cafe-name p {
+  @apply text-4xl mt-10 mb-5 text-[#e9dec9];
+}
+.cafe-name h1 {
+  @apply font-mysoul text-9xl text-[#e9dec9] my-4;
+}
+.coffeemason-img {
+  @apply absolute bottom-[150px] mt-[-55vh] ml-[130vh] w-full max-w-[400px];
+}
+
+/* === Services === */
+.mason-services {
+  @apply p-5 bg-[#252324] mt-[70px] mb-[30px] text-[#e0cdbf];
+}
+.mason-services h2 {
+  @apply font-caveat text-[40px] mb-[20px] text-center;
+}
+.our-services {
+  @apply flex justify-between flex-wrap gap-y-8 mx-[50px] md:mx-[30px];
+}
+.service1 {
+  @apply flex flex-col items-center text-center w-full sm:w-1/2 md:w-1/4;
+}
+.our-services p {
+  @apply font-belleza text-[20px] mt-4;
+}
+.coffeebar-img {
+  @apply w-full max-w-[150px];
+}
+
+/* === About Mason === */
+.about-mason {
+  @apply flex justify-center items-stretch p-2 mb-[50px] gap-0;
+}
+.about-img {
+  @apply w-[35%] h-auto object-cover;
+}
+.about-text {
+  @apply w-[50%] bg-[#252324] text-[#e9dec9] p-[50px] flex flex-col justify-center;
+}
+.text-wrapper h2 {
+  @apply font-caveat text-[40px] mb-[30px] text-[#e9dec9];
+}
+.about-text p {
+  @apply font-belleza text-[20px] leading-[1.8];
+}
+
+/* === Open Hours === */
+.open-hours-section {
+  @apply relative flex items-center justify-center bg-[#252324] text-[#e9dec9] px-[30px] py-[30px] mt-[-130px] mb-[40px] overflow-hidden;
+}
+.open-hours-content {
+  @apply text-left max-w-[500px] z-[1];
+}
+.open-hours-content h2 {
+  @apply font-caveat text-[48px] mb-[30px];
+}
+.open-hours {
+  @apply font-belleza text-[30px] mb-[20px];
+}
+.hours p,
+.location {
+  @apply font-belleza text-[28px] my-[5px];
+}
+.direction-btn {
+  @apply mt-[20px] mb-[20px] px-[24px] py-[12px] bg-[#e26a32] text-[#252324] font-belleza text-[18px] rounded-[12px] cursor-pointer hover:bg-[#e9dec9];
+}
+.promo-circle {
+  @apply relative mt-[-50px] z-[2] w-[220px] h-[200px] bg-[#e26a32] rounded-full text-[#252324] flex justify-center items-center text-center font-belleza text-[19px] p-2 ml-auto mr-[80px];
+}
+.promo-circle strong {
+  @apply font-caveat text-[30px];
+}
+.beans-left,
+.beans-right {
+  @apply absolute top-0 w-[400px] h-auto opacity-80 z-0;
+}
+.beans-left {
+  @apply left-0;
+}
+.beans-right {
+  @apply right-0;
+}
+
+/* === Categories === */
+
+.section-title {
+  @apply font-caveat text-center text-[#252324] text-[48px] mb-[30px] relative;
+}
+.section-title::before,
+.section-title::after {
+  content: "";
+  @apply absolute w-[150px] h-[7px] bg-black top-1/2;
+}
+.section-title::before {
+  @apply left-0 -translate-y-1/2;
+}
+.section-title::after {
+  @apply right-0 -translate-y-1/2;
+}
+.categories-container {
+  @apply flex justify-center gap-[20px] flex-wrap;
+}
+.category-card {
+  @apply bg-white rounded-[12px] overflow-hidden text-center w-[350px] mb-[50px] shadow-md transition-transform duration-300 cursor-pointer hover:scale-105;
+}
+.category-card img {
+  @apply w-full h-[180px] object-cover;
+}
+.category-card h3 {
+  @apply font-belleza text-[20px] my-[10px];
+}
+.view-more {
+  @apply bg-transparent border-none text-[#333] font-bold mb-[15px] cursor-pointer transition-colors duration-300 font-fredoka text-[13px] hover:text-[#c86f35] hover:underline;
+}
+
+/* === PORTOFOLIO === */
+.porto {
+  @apply bg-[#252324] p-[20px] text-center text-[#f4e7d4];
+}
+.porto-title {
+  @apply font-caveat text-[48px] mb-[30px];
+}
+.event-grid {
+  @apply flex flex-wrap gap-[20px] justify-center mb-[80px];
+}
+.event-large {
+  @apply relative flex-[1_1_55%] min-w-[300px] max-w-[400px];
+}
+.event-large img {
+  @apply w-full h-full object-cover block;
+}
+.event-small {
+  @apply flex flex-col justify-between gap-[20px] flex-[1_1_35%] min-w-[200px] max-w-[400px];
+}
+.small-item {
+  @apply relative;
+}
+.small-item img {
+  @apply w-full h-full object-cover block;
+}
+.overlay-text {
+  @apply absolute bottom-0 w-full bg-[rgba(243,235,223,0.7)] text-[#1f1f1f] p-[10px] font-belleza text-[20px] font-bold text-center;
+}
+
+/* === BLOG Section  === */
+.Blog {
+  @apply bg-[#252324] p-[20px] text-center;
+}
+.Blog-title {
+  @apply font-caveat text-[48px] mb-[30px] text-[#f4e7d4];
+}
+.story-grid {
+  @apply flex flex-wrap gap-[30px] justify-center;
+}
+.story-card {
+  @apply bg-[#f3e6d1] rounded-[16px] w-[400px] overflow-hidden flex flex-col text-left shadow-lg mb-[80px]
+         transition-transform duration-300 transform hover:scale-105;
+  height: 460px;
+}
+.brewhacks-img,
+.ekspresso-img,
+.icecoffee-img {
+  @apply w-full h-[200px] object-cover;
+}
+.story-content {
+  @apply flex flex-col h-full p-[20px] text-[#1f1f1f];
+}
+.story-content h3 {
+  @apply text-[1.2rem] font-bold mb-[10px] font-fredoka;
+}
+.story-content p {
+  @apply font-belleza text-[20px] mb-[16px];
+}
+.see-more {
+  @apply bg-[#e26a32] font-belleza text-[#252324] text-[16px] border-none px-[15px] py-[10px] rounded-[8px] cursor-pointer transition duration-300 mt-auto self-end hover:bg-[#252324] hover:text-[#f3e6d1];
+}
+
+/* === Testimoni  === */
+.testimoni-section {
+  @apply w-full bg-[#f4e7d4] py-10 px-0  overflow-hidden;
+}
+.Testimoni {
+  @apply relative flex items-center justify-center mt-[40px] mb-8;
+}
+.Testimoni h2 {
+  @apply font-caveat text-center text-[48px] mb-[30px] relative z-10 px-4 bg-[#f4e7d4];
+}
+.Testimoni::before,
+.Testimoni::after {
+  content: "";
+  @apply absolute w-[150px] h-[7px] bg-black top-1/2;
+}
+.Testimoni::before {
+  @apply left-0 -translate-y-1/2;
+}
+.Testimoni::after {
+  @apply right-0 -translate-y-1/2;
+}
+.testimoni-title {
+  @apply text-4xl font-bold text-center font-caveat mb-10;
+}
+.testimoni-card {
+  @apply w-fit max-w-[500px] bg-white rounded-lg shadow-md px-6 py-4 text-left shrink-0 mb-7;
+}
+.testimoni-message {
+  @apply text-gray-800 mb-2 italic;
+}
+.testimoni-name {
+  @apply font-semibold text-[#1f1f1f];
+}
+
+/* === FOOTER  === */
+.footer {
+  @apply bg-[#1b1919] text-[#f3e6d1] p-8;
+}
+.footer-title {
+  @apply font-mysoul text-5xl text-[#e9dec9] my-4 mb-10;
+}
+.footer-container {
+  @apply max-w-[1280px] mx-auto flex flex-col gap-10 mb-[50px] md:flex-row md:justify-between;
+}
+.footer-text {
+  @apply mb-5 text-[20px] font-belleza;
+}
+.footer-icons {
+  @apply flex gap-4 mt-4;
+}
+.footer-icon {
+  @apply w-10 h-[25px] text-[#f1e3cc] cursor-pointer transition-colors duration-300;
+}
+.footer-icon:hover {
+  @apply bg-[#f1e3cc] text-[#1b1919];
+}
+.footer-subscribe-title {
+  @apply font-caveat text-[28px] mt-[90px] mb-[20px];
+}
+.footer-subscribe-text {
+  @apply font-belleza text-[20px] mb-4 max-w-[24rem];
+}
+.footer-input-wrapper {
+  @apply flex items-center border-b border-[#f1e3cc] pb-[6px];
+}
+.footer-input {
+  @apply bg-transparent border-none outline-none text-[#ccc] py-2 w-full text-base;
+}
+.footer-input::placeholder {
+  font-family: "Fredoka", cursive;
+  font-size: 15px;
+  color: #aaa;
+}
+.footer-line {
+  @apply border-t border-[#f1e3cc] my-[30px] mb-[20px] w-screen relative left-1/2;
+  transform: translateX(-50%);
+}
+.footer-copy {
+  @apply text-center text-[16px] text-[#aaa] font-fredoka;
+}
